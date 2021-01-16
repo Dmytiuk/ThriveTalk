@@ -1,0 +1,41 @@
+.quenternary{
+  margin-bottom: 10%;
+}
+.quenternary .blocks__item{
+  width: 25%;
+}
+
+.tertiary .blocks__item{
+  width: 33.333%;
+  padding: 5% 5% 17% 5%;
+  &:nth-of-type(1){
+    background: #22356F;
+  }
+  &:nth-of-type(2){
+    background: #0052C1;
+  }
+  &:nth-of-type(3){
+    background: #62D0DF;
+  }
+  &:nth-of-type(4){
+    background: #C4E769;
+  }
+  &:nth-of-type(5){
+    background: #DEE1FF;
+  }
+  &:nth-of-type(6){
+    background: #8F00FF;
+  }
+}
+.white .blocks__item{
+  background: $white!important;
+  color: $dark;
+  padding-bottom: 7%;
+}
+.rev{
+  flex-direction: row-reverse;
+  background: $dark;
+}
+.rev .section__prefooter{
+  color: $white;
+}
