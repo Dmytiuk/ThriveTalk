@@ -15,4 +15,8 @@ $(window).scroll(function() {
 
 
 });
+$('.menuBtn').click(function () {
+    $('.menuBtn').toggleClass('active');
+    $('.header__nav').toggleClass('opened');
+});
 });

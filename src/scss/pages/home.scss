@@ -4,10 +4,16 @@
   justify-content: flex-start;
   align-items: flex-end;
   overflow: hidden;
+  @media(max-width: 768px){
+    flex-direction: column;
+  }
   &:nth-of-type(1){
     padding: 15% 10% 5% 10%;
     background: $grey;
     color: $dark;
+    @media(max-width: 768px){
+    margin-top: 60px;
+    }
   }
   &:nth-of-type(2){
     padding: 10% 10% 3% 10%;
@@ -30,6 +36,9 @@
     display: flex;
     align-items: flex-end;
     width: 40%;
+    @media(max-width: 768px){
+    width: 100%;
+    }
   }
   &__description{
     h1{
@@ -49,6 +58,9 @@
       font-weight: 400;
       line-height: 1.7em;
       margin-bottom: 10%;
+      @media(max-width: 768px){
+        font-size: 5vmin;
+      }
     }
 
   }
@@ -59,15 +71,25 @@
    height: 80vh;
    width: 50%;
    padding: 5%;
+   box-sizing: border-box;
     color: $dark;
+    @media(max-width: 768px){
+      width: 100%;
+    }
    span{
      &:nth-of-type(1){
         font-size: 2vmin;
+        @media(max-width: 768px){
+        font-size: 4vmin;
+        }
      }
    }
    p{
      font-size: 5vmin;
      font-weight: 700;
+     @media(max-width: 768px){
+     font-size: 7vmin;
+     }
    }
  }
  &__background1{
@@ -75,6 +97,9 @@
      right: -5%;
      top: -15%;
      width: 55%;
+     @media(max-width: 768px){
+      display: none;
+     }
  }
  &__background2{
    position: absolute;
@@ -82,10 +107,16 @@
    top: 0;
    height: 100%;
    width: auto;
+   @media(max-width: 768px){
+    display: none;
+   }
  }
  &__background3{
    height: auto;
    width: 30%;
+   @media(max-width: 768px){
+    display: none;
+   }
  }
  &__button {
    position: relative;
@@ -171,15 +202,24 @@
 .blocks{
   display: flex;
   flex-wrap: wrap;
+  @media(max-width: 768px){
+  flex-direction: column;
+  }
   &__item{
     padding: 4% 4% 14% 4%;
     box-sizing: border-box;
 
     h4{
       font-size: 4vmin;
+      @media(max-width: 768px){
+      font-size: 5vmin;
+      }
     }
     p{
       font-size: 3vmin;
+      @media(max-width: 768px){
+        font-size: 5vmin;
+      }
     }
     &:nth-of-type(1){
       background: #FFE2DE;
@@ -202,6 +242,10 @@
       li{
         font-size: 4vmin;
         color: $white;
+        @media(max-width: 768px){
+        font-size: 6vmin;
+        margin-left: 40px;
+        }
         &::marker{
           color: $orange;
         }
