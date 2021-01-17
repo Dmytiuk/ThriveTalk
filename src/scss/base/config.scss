@@ -1,5 +1,8 @@
 .quenternary{
   margin-bottom: 10%;
+  @media(max-width: 768px){
+    margin-bottom: 0;
+  }
 }
 .quenternary .blocks__item{
   width: 25%;
